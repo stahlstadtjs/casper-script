@@ -2137,6 +2137,8 @@ body.page-template .post-title {
 
 .post-head.has-video {
   height: 70vh;
+  position: relative;
+  z-index: 13;
 }
 
 .aspect-ratio {
@@ -2168,6 +2170,7 @@ body.page-template .post-title {
   width: 100%;
   z-index: 11;
   text-rendering: initial;
+  box-sizing: border-box;
 }
 
 .menu__item {
