@@ -2229,7 +2229,7 @@ body.page-template .post-title {
   position: absolute;
   left: 40px;
   top: 20px;
-  z-index: 1;
+  z-index: 12;
 }
 
 .top-logo img {
