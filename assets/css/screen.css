@@ -2275,6 +2275,7 @@ body.page-template .post-title {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  border: 0;
 }
 
 .blog-video {
@@ -2294,4 +2295,20 @@ body.page-template .post-title {
 
 .post-head.has-video {
   height: 70vh;
+}
+
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 51%;
+  margin: 1.75em 0;
+}
+
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+  margin: 0;
 }
