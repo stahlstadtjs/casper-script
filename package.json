@@ -2,7 +2,7 @@
     "name": "casper-script",
     "description": "The default personal blogging theme for Ghost. Beautiful, minimal and responsive.",
     "demo": "https://scriptconf.org/blog",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "engines": {
         "ghost": ">=0.9.0 <1.0.0"
     },

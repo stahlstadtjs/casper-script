@@ -1,17 +1,20 @@
-<div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        {{#foreach navigation}}
-            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
-    </ul>
-    {{#if @labs.subscribers}}
-        <a class="subscribe-button" href="{{@blog.url}}/subscribe/">Subscribe</a>
-    {{else}}
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-    {{/if}}
-</div>
-<span class="nav-cover"></span>
+<nav class="menu">
+  <a class="menu__item" href="https://www.facebook.com/scriptconf" title="Facebook">
+    <svg class="link__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
+  </a>
+  <a class="menu__item" href="https://twitter.com/scriptconf" title="Twitter">
+    <svg class="link__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+  </a>
+  {{#foreach navigation}}
+    <a href="{{url absolute="true"}}">{{label}}</a>
+  {{/foreach}}
+  <a class="menu__item" href="/blog" title="Code of Conduct">
+    Blog
+  </a>
+  <a class="menu__item" href="/2017" title="Code of Conduct">
+    2017
+  </a>
+  <a class="menu__item" href="/newsletter" title="Code of Conduct">
+    Newsletter
+  </a>
+</nav>
