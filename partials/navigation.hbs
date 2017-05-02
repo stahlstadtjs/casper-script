@@ -6,15 +6,6 @@
     <svg class="link__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
   </a>
   {{#foreach navigation}}
-    <a href="{{url absolute="true"}}">{{label}}</a>
+    <a class="menu__item" href="{{url absolute="true"}}">{{label}}</a>
   {{/foreach}}
-  <a class="menu__item" href="/blog" title="Code of Conduct">
-    Blog
-  </a>
-  <a class="menu__item" href="/2017" title="Code of Conduct">
-    2017
-  </a>
-  <a class="menu__item" href="/newsletter" title="Code of Conduct">
-    Newsletter
-  </a>
 </nav>
