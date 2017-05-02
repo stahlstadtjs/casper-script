@@ -18,7 +18,7 @@ src="https://www.youtube.com/embed/${videoID}?autoplay=1" frameborder="0" allowf
 
   const setupGallery = () => {
     const imgs = document.querySelectorAll('.gallery-item img');
-    if (window.getComputedStyle(imgs[0]).objectFit === undefined) {
+    if (imgs.length && window.getComputedStyle(imgs[0]).objectFit === undefined) {
       Array.from(imgs).forEach(el => {
         el.style.opacity = 0;
         el.parentNode.style.backgroundImage = `url('${el.src}')`;
