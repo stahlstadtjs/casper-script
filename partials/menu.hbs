@@ -1,6 +1,6 @@
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+<header class="main-header post-head {{#if feature_image}}" style="background-image: url({{feature_image}}){{else}}no-cover{{/if}}">
   {{#if @blog.logo}}<a class="top-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-  <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+  <nav class="main-nav {{#if feature_image}}overlay{{/if}} clearfix">
     {{#if @blog.navigation}}
     {{/if}}
   </nav>
